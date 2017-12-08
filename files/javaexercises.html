@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Demo Exercises</title>
+    </head>
+<body>
+
+    <h2> ------------ Exercise 1 -------------- </h2>
+    <h3>Hello World!</h3>
+    <h4>Problem Statement</h4>
+    <p>Write a program that prints ‘Hello World’ to the screen.</p>
+    <h4>Plans and pseudocode</h4>
+    <p>Create a button, so when clicked it will show hello world on the screen.</p>
+    <h4>Demonstration</h4>
+     <p id="hello"></p>
+     <button type="button" onclick='document.getElementById("hello").innerHTML = "Hello World!"'>Click Me!</button>
+     
+    <h2> ------------ Exercise 2 -------------- </h2>
+    <h3>Greetings</h3>
+    <h4>Problem Statement<h4>
+    <p>Write a program that asks the user for their name and greets them with their name.</p>
+    <h5>Plans and pseudocode</h5>
+    <p>Have a var. where it prompts a window to show up that ask for their name then when they type in there name it comes back with hello and their name.</p>
+    <h6>Demonstration</h6>
+    <script> 
+      var username = prompt("Enter your name: ", "");
+      if (confirm("Your name is " + username)) {
+       document.write("<h1>Hello, " + username + "!</h1>");
+      } else {
+       document.write("<h1>Hello, world!</h1>");
+      }
+    </script>
+    
+    
+    <h2> ------------ Exercise 3 -------------- </h2>
+    <h3>Calculate Total Meal Price with Variable Tax and Tip</h3>
+    <h4>Problem Statement</h4>
+    <p>Write a program that asks the user for a meal price, tax rate, and tip percentage and then calculates the total bill.</p>
+    <h5>Plans and pseudocode</h5>
+    <p> First I made a input for the meal price, tax rate, and tip rate with some random base values. Then I made the button program so when you click the button it gets you thr total meal price. Lastly I created a function with all the varirables need to do the calcution so the meal price value intput, the tax rate input, and the tip rate input. Then the variable that what calculate the total cost with the correct program function. 
+    <h6>Demonstration</h6>
+    Meal Price: <input type="text" id="mealPrice" value="15"><br>
+    Tax Rate: <input type="text" id="taxRate" value="6"><br>
+    Tip Rate: <input type="text" id="tipRate" value="5"><br>
+    <button onclick="mealPriceCalc2()">Calculate Meal Price</button>
+    <p id="cost2"></p>
+    
+    <script> 
+        function mealPriceCalc2() {
+            var mealPrice = parseInt(document.getElementById('mealPrice').value);
+            var taxRate = parseInt(document.getElementById('taxRate').value);
+            var tipRate = parseInt(document.getElementById('tipRate').value);
+            var totalCost = mealPrice + (mealPrice * (taxRate / 100.0)) + (mealPrice * (tipRate / 100.0));
+            document.getElementById("cost2").innerHTML = "Total Cost = " + totalCost;
+        }
+    </script>
+
+</body>
+</html>
