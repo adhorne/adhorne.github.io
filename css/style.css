@@ -27,7 +27,7 @@ body {
 }
 
 .header h1 {
-  color: blue;
+  color: white;
   line-height: 100px; 
   font-size: 80px;
   margin-top: 0;
@@ -51,7 +51,7 @@ body {
 }
 
 .btn {
-  color: #fff;
+  color: #DBDBFF;
   background: #000;
   padding: 10px 40px;
   text-decoration: none; 
