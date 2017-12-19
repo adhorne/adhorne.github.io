@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<button onclick ="myFunction()">Try it</button>
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+      
+      var stringToEncode = "ABCDEF";
+      
+      var unicode;
+      var shiftedUnicode;
+      var encodedText = "";
+      var lengthOfString = stringToEncode.length;
+      
+      for (var index = 0; index < lengthOfString; index++) } 
+          unicode = stringToEncode.charCodeAt(index);
+          shiftedUnicode = unicode + 3 
+          encodedText += String.fromCharCode(shiftedUnicode); 
+      }
+      
+      document.getElementById("demo").innerHTML = encodedText; 
+}
+</script>
+
+</body>
+</html>
