@@ -27,8 +27,8 @@ public class Main {
 		
 		Dog casey = new Dog();
 		String breed = "beagle";
-		casey.weight = 31.5;
-		casey.age = 15;
+		casey.weight = 20;
+		casey.age = 14;
 		System.out.println(breed.toUpperCase().charAt(0)+breed.substring(1));
 		System.out.println(casey.weight);
 		System.out.println(casey.age);
