@@ -107,6 +107,10 @@ public class Main {
 			  System.out.println("Default: Value is: "+num);
 		      }
 		
+		 Bicycle myBike = new Bicycle();
+                 myBike.setSpeed(5);
+                 System.out.println(myBike.getSpeed());
+		
 		
 		Dog casey = new Dog();
 		String breed = "beagle";
@@ -133,4 +137,17 @@ class Dog {
 	
 	
 	
+}
+
+ class Bicycle {
+	private int speed;
+	private int cadence;
+	
+	public int getSpeed() {
+		return speed;
+	}
+	
+	public void setSpeed(int s) {
+		speed = s;
+	}
 }
